@@ -2,12 +2,12 @@
 import { BrowserRouter, Routes,Route } from 'react-router-dom'
 // import viteLogo from '/vite.svg'
 // import './App.css';
-import Homepage from './Pages.tsx/Homepage'
-import About from './Pages.tsx/about';
-import Count from './Pages.tsx/count';
-import Todo from './Pages.tsx/Todo';
-import Calculator from './Pages.tsx/Calculator';
-import Task from './Pages.tsx/Task';
+import Homepage from './Pages/Homepage'
+import About from './Pages/about';
+import Count from './Pages/count';
+import Todo from './Pages/Todo';
+import Calculator from './Pages/Calculator';
+import Task from './Pages/Task';
 
 
 
