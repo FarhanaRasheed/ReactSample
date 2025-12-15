@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 interface TodoItem {
     id: number;
     title: string;
-    done: boolean;
+    done: boolean;//for typescript view
 }
 
 const Todo: React.FC = () => {
@@ -25,7 +25,7 @@ const Todo: React.FC = () => {
             id: Date.now(),
             title: text.trim(),
             done: false
-        };//created object to store new to-do..adding new todo thingswill store to array below
+        };//created object to store new to-do..adding new todo thingswill store to array below//if so valu are passed 
 
         setTodos([...Todos, newTodo]);
         setText('')//for clear textbox otherwise last added will be on text
@@ -38,7 +38,7 @@ const Todo: React.FC = () => {
         );
     }
     function handleDelete(id: number) {
-        setTodos(Todos.filter((todo) => todo.id !== id));//if  elemnt is deleted using Filter(map),the array is rebuilded without deleted element and give new array
+        setTodos(Todos.filter((todo) => todo.id !== id));//if  elemnt is deleted using Filter(map),the array is rebuilded without deleted element and give new array.filter is mainly working
     }
     return (
         <>
@@ -69,7 +69,7 @@ const Todo: React.FC = () => {
                             padding: "10px",
                             borderColor: "blue",
                             borderWidth: "2px",
-                            borderStyle: "solid",
+                            borderStyle: "solid", 
                             borderRadius: "5px",
                             marginRight: "10px"
                         }} />{/* step1 ***/}
