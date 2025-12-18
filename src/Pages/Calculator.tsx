@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
 const Calculator = () => {
-  const[text, setText] = useState<String>("");
+  const[text, setText] = useState<string>("");
   // STEP-3
   //text is the value from input..setText is virtual saving from step-2
   //is now passed to input value and viewed to user view(text is the value from user)
 
-  const HandleClick=(value:String)=>{
+  const HandleClick=(value: string)=>{
     setText((prev) => prev + value);
   }
   //STEP-2
